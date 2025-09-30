@@ -1,0 +1,96 @@
+1. Declare variables with all primitive datatypes and print their values & typeof
+2. What will be the output?
+console.log(typeof null);
+console.log(typeof NaN);
+console.log(typeof []);
+console.log(typeof {});
+3. Create a variable x = "10" and y = 10.
+Check x == y and x === y.
+Explain the difference.
+4. Create an array with mixed datatypes:Print each value and its type.
+5. Write a program that:
+Takes a number as input.
+Converts it to string.
+Then back to number.
+Print type at each step.
+
+6. Declare variables using var, let, and const. Print their values and explain the differences.
+
+7. Can you reassign a value to a const variable? Try it and check what happens.
+
+8.What will be the output?
+var x = 10;
+var x = 20;
+console.log(x);
+
+9. What happens if you declare a variable without var/let/const?
+10. Predict the output:
+	1. console.log(b);
+	   let b = 20;
+
+	2. console.log(b);
+           let b = 20;
+11. Create a block of code using { } and test variable behavior with var, let, and const.
+
+	{
+  	var x = 1;
+  	let y = 2;
+  	const z = 3;
+	}
+console.log(x); 
+console.log(y); 
+console.log(z);
+
+12. What will be the output?
+let a = 100;
+{
+  let a = 200;
+  console.log(a);
+}
+console.log(a);
+
+13. difference b/w Let  var const 
+14. difference b/w == === 
+
+15. Write a program using if...else to check whether a number is positive, negative, or zero.
+16. Write a program to print all numbers from 1 to 10 using:
+for loop
+while loop
+do...while loop
+
+17. Write a program to find the factorial of a number using a loop.
+----Write a program to print numbers from 1 to 50, but skip 5
+18. Write a program to print numbers from 1 to 50, but skip multiples of 5
+19. Write a program to print numbers from 1 to 20, but stop when the number is 7
+20. Print the first 10 even numbers using a for loop.
+21. Print the first 10 odd numbers using a while loop.
+22. Print the multiplication table of 5 using a loop.
+23. Write a switch statement program that prints the day of the week for a given number (1 = Monday, …, 7 = Sunday).
+24. Write a program to print all numbers from 1–50, but:
+	For multiples of 3 → print "Fizz"
+	For multiples of 5 → print "Buzz"
+	For multiples of 3 and 5 → print "FizzBuzz"
+
+25. Difference b/w for in & for off loop 
+26. Use for...in to print all keys of the object:
+27. Use for...of on the array print values
+28. Write a program to loop over this object using for...in and print both key & value:
+let student = { name: "xyz", age: 22, grade: "A" };
+28. Use for...of to loop over a string "JavaScript" and print each character.
+29. Why does this code throw an error? How to fix it?
+let user = { name: "Sam", age: 30 };
+for (let val of user) {
+  console.log(val);
+}
+30. Predict the output:
+
+let nums = [1, 2, 3];
+nums.custom = "extra";
+
+for (let i in nums) {
+  console.log(i);
+}
+
+for (let val of nums) {
+  console.log(val);
+}
