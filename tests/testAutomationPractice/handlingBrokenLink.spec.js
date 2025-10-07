@@ -21,7 +21,7 @@ test.only("broken links", async ({ page, request }) => {
     )
       continue;
 
-    let response = await request.get(await item.getAttribute("href"));
+    let response = await request.get(await href);
     console.log(response.status());
     if (response.status() >= 400) {
       console.log(`${href} is broken link`);

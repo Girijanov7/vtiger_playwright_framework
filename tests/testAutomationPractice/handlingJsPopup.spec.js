@@ -6,11 +6,11 @@ test("simple alert", async ({ page }) => {
     .getByRole("heading", { name: "Alerts & Popups" })
     .scrollIntoViewIfNeeded();
 
-  page.on("dialog", async (dialog) => {
-    console.log(dialog.message());
-    console.log(dialog.type());
-    await page.waitForTimeout(2000);
-    await dialog.accept();
+  page.on("dialog", async (dia) => {
+    console.log(dia.message());
+    // console.log(dialog.type());
+    await page.waitForTimeout(1000);
+    await dia.accept();
   });
 
   await page.getByRole("button", { name: "Simple Alert" }).click();
@@ -34,7 +34,7 @@ test("confirmation alert", async ({ page }) => {
   await page.waitForTimeout(3000);
 });
 
-test("prompt alert", async ({ page }) => {
+test.only("prompt alert", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
 
   page.on("dialog", async (dialog) => {
